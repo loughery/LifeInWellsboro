@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Life in Wellsboro</title>
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --paper: #faf8f4;
+    --line: #d8d2c4;
+    --accent: #6b5c45;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.6;
+  }
+  header {
+    padding: 5rem 1.5rem 3rem;
+    text-align: center;
+    border-bottom: 1px solid var(--line);
+  }
+  header h1 {
+    font-size: clamp(2rem, 6vw, 3.2rem);
+    letter-spacing: 0.02em;
+    margin: 0 0 0.5rem;
+  }
+  header p.tagline {
+    font-size: 1.1rem;
+    color: var(--accent);
+    font-style: italic;
+    margin: 0;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  section {
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--line);
+  }
+  section:last-of-type {
+    border-bottom: none;
+  }
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--accent);
+  }
+  .books {
+    display: grid;
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+  }
+  .book {
+    padding: 1.25rem 1.5rem;
+    border: 1px solid var(--line);
+    background: #fff;
+  }
+  .book h3 {
+    margin: 0 0 0.3rem;
+    font-size: 1.15rem;
+  }
+  .book span {
+    font-size: 0.9rem;
+    color: var(--accent);
+  }
+  .placeholder {
+    color: #999;
+    font-style: italic;
+  }
+  a {
+    color: var(--accent);
+  }
+  footer {
+    text-align: center;
+    padding: 2.5rem 1.5rem 3rem;
+    font-size: 0.9rem;
+    color: #777;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Life in Wellsboro</h1>
+  <p class="tagline">A photographic history, told one book at a time</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>About the Series</h2>
+    <p class="placeholder">
+      [Placeholder — a paragraph or two on what this series is: the town, the era(s) covered,
+      why it started, and what makes this project different from a typical local history book.
+      Send me your notes and I'll turn this into real copy.]
+    </p>
+  </section>
+
+  <section>
+    <h2>The Books</h2>
+    <div class="books">
+      <div class="book">
+        <h3>Life in Wellsboro, Book One</h3>
+        <span class="placeholder">Title, year, short description — TBD</span>
+      </div>
+      <div class="book">
+        <h3>Life in Wellsboro, Book Two</h3>
+        <span class="placeholder">Title, year, short description — TBD</span>
+      </div>
+      <div class="book">
+        <h3>Life in Wellsboro, Book Three</h3>
+        <span class="placeholder">In progress — expected [date]</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>About the Author</h2>
+    <p class="placeholder">
+      [Placeholder — a short bio for Gale Largey. A sentence or two on his connection
+      to Wellsboro and what drew him to documenting its history.]
+    </p>
+  </section>
+
+  <section>
+    <h2>Have a Photo or Story to Share?</h2>
+    <p>
+      Book Three is currently being assembled, and contributions from the community are
+      part of what makes this series work. If you have an old photograph of Wellsboro —
+      or a story to go with one — we'd love to see it.
+    </p>
+    <p class="placeholder">
+      [Link to the submission form goes here once it's set up.]
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  &copy; <span id="year"></span> Life in Wellsboro. All photographs remain the property of their original owners.
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
