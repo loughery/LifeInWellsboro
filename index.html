@@ -1,155 +1,877 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
+
+<title>Life in Wellsboro | 1880–2000</title>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Life in Wellsboro</title>
+
+<meta name="description"
+content="Life in Wellsboro — continuing Gale P. Largey's photographic history of Wellsboro, Pennsylvania, with a new community-supported volume covering 1960–2000.">
+
+<meta name="author" content="Gale P. Largey">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&display=swap"
+rel="stylesheet">
+
+
 <style>
-  :root {
-    --ink: #1a1a1a;
-    --paper: #faf8f4;
-    --line: #d8d2c4;
-    --accent: #6b5c45;
-  }
-  * { box-sizing: border-box; }
-  body {
+
+/* ===== HISTORIC PARCHMENT ===== */
+
+html {
+    background-color: #EADCC5;
+
+    background-image:
+        radial-gradient(rgba(0,0,0,0.04) 1px, transparent 1px),
+        radial-gradient(rgba(0,0,0,0.025) 1px, transparent 1px);
+
+    background-size: 4px 4px, 7px 7px;
+}
+
+
+/* ===== BASE ===== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
     margin: 0;
-    background: var(--paper);
-    color: var(--ink);
-    font-family: Georgia, 'Times New Roman', serif;
-    line-height: 1.6;
-  }
-  header {
-    padding: 5rem 1.5rem 3rem;
-    text-align: center;
-    border-bottom: 1px solid var(--line);
-  }
-  header h1 {
-    font-size: clamp(2rem, 6vw, 3.2rem);
-    letter-spacing: 0.02em;
-    margin: 0 0 0.5rem;
-  }
-  header p.tagline {
-    font-size: 1.1rem;
-    color: var(--accent);
-    font-style: italic;
-    margin: 0;
-  }
-  main {
-    max-width: 720px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    color: #26221c;
+
+    line-height: 1.8;
+
+    padding: clamp(55px, 8vh, 100px) 20px 40px;
+}
+
+.page {
+    max-width: 1050px;
+
     margin: 0 auto;
-    padding: 0 1.5rem;
-  }
-  section {
-    padding: 3rem 0;
-    border-bottom: 1px solid var(--line);
-  }
-  section:last-of-type {
-    border-bottom: none;
-  }
-  h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: var(--accent);
-  }
-  .books {
-    display: grid;
-    gap: 1.25rem;
-    margin-top: 1.5rem;
-  }
-  .book {
-    padding: 1.25rem 1.5rem;
-    border: 1px solid var(--line);
-    background: #fff;
-  }
-  .book h3 {
-    margin: 0 0 0.3rem;
-    font-size: 1.15rem;
-  }
-  .book span {
-    font-size: 0.9rem;
-    color: var(--accent);
-  }
-  .placeholder {
-    color: #999;
-    font-style: italic;
-  }
-  a {
-    color: var(--accent);
-  }
-  footer {
+}
+
+
+/* ===== HERO ===== */
+
+.hero {
     text-align: center;
-    padding: 2.5rem 1.5rem 3rem;
-    font-size: 0.9rem;
-    color: #777;
-  }
+
+    max-width: 850px;
+
+    margin: 0 auto clamp(70px, 10vh, 120px);
+}
+
+.eyebrow {
+    font-family: 'Cinzel', serif;
+
+    text-transform: uppercase;
+
+    letter-spacing: .30em;
+
+    font-size: clamp(.8rem, 2vw, 1rem);
+
+    color: #655c4f;
+
+    margin-bottom: .8em;
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+
+    font-size: clamp(38px, 7vw, 70px);
+
+    font-weight: 700;
+
+    letter-spacing: .08em;
+
+    line-height: 1.15;
+
+    color: #1b1814;
+
+    margin: 0;
+}
+
+.hero-period {
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+
+    color: #5f564a;
+
+    letter-spacing: .12em;
+
+    margin-top: .45em;
+}
+
+.divider {
+    width: 100px;
+
+    height: 1px;
+
+    background: #bcae97;
+
+    margin: 2em auto;
+}
+
+.hero-intro {
+    max-width: 720px;
+
+    margin: 0 auto;
+
+    font-size: clamp(1.08rem, 2.5vw, 1.3rem);
+
+    line-height: 1.85;
+}
+
+
+/* ===== SECTION HEADINGS ===== */
+
+.section-label {
+    font-family: 'Cinzel', serif;
+
+    text-transform: uppercase;
+
+    letter-spacing: .27em;
+
+    font-size: .9rem;
+
+    color: #655c4f;
+
+    text-align: center;
+
+    margin-bottom: .8em;
+}
+
+h2 {
+    font-family: 'Cinzel', serif;
+
+    font-size: clamp(28px, 4vw, 42px);
+
+    letter-spacing: .06em;
+
+    line-height: 1.3;
+
+    color: #1b1814;
+
+    text-align: center;
+
+    margin: 0;
+}
+
+
+/* ===== ORIGINAL VOLUMES ===== */
+
+.original-volumes {
+    margin-bottom: clamp(80px, 11vh, 140px);
+}
+
+.books-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: clamp(35px, 6vw, 80px);
+
+    max-width: 950px;
+
+    margin: 3.5em auto 0;
+
+    align-items: start;
+}
+
+.volume {
+    text-align: center;
+}
+
+.book-cover {
+    display: block;
+
+    width: 100%;
+
+    max-width: 470px;
+
+    height: auto;
+
+    margin: 0 auto 1.7em;
+
+    box-shadow:
+        0 5px 14px rgba(0,0,0,.18),
+        0 1px 3px rgba(0,0,0,.15);
+}
+
+.volume h3 {
+    font-family: 'Cinzel', serif;
+
+    font-size: clamp(1.25rem, 2.7vw, 1.65rem);
+
+    line-height: 1.4;
+
+    margin: 0 0 .35em;
+
+    color: #1b1814;
+}
+
+.volume-year {
+    color: #655c4f;
+
+    font-size: 1.05rem;
+}
+
+
+/* ===== GALE'S IDEA ===== */
+
+.original-idea {
+    max-width: 780px;
+
+    margin: 0 auto clamp(90px, 12vh, 150px);
+
+    text-align: center;
+}
+
+.original-idea p {
+    font-size: clamp(1.05rem, 2.4vw, 1.22rem);
+
+    line-height: 1.9;
+
+    margin: 1.7em auto 0;
+
+    max-width: 720px;
+}
+
+.original-idea .quotation {
+    font-size: clamp(1.25rem, 3vw, 1.65rem);
+
+    font-style: italic;
+
+    color: #3f3931;
+
+    max-width: 650px;
+
+    margin: 2em auto 0;
+}
+
+
+/* ===== THIRD VOLUME ===== */
+
+.third-volume {
+    max-width: 880px;
+
+    margin: 0 auto;
+
+    padding-top: clamp(60px, 8vh, 100px);
+
+    border-top: 1px solid rgba(80,70,55,.20);
+
+    text-align: center;
+}
+
+.story-continues {
+    font-family: 'Cinzel', serif;
+
+    text-transform: uppercase;
+
+    letter-spacing: .30em;
+
+    color: #655c4f;
+
+    font-size: .9rem;
+
+    margin-bottom: 1em;
+}
+
+.third-volume h2 {
+    font-size: clamp(34px, 6vw, 56px);
+}
+
+.third-period {
+    font-size: clamp(1.5rem, 3.5vw, 2rem);
+
+    color: #5f564a;
+
+    margin-top: .25em;
+
+    letter-spacing: .08em;
+}
+
+
+/* ===== THIRD BOOK PLACEHOLDER ===== */
+
+.future-book {
+    max-width: 580px;
+
+    margin: 3em auto;
+
+    padding: clamp(45px, 7vw, 75px) 30px;
+
+    border: 1px solid #a99c88;
+
+    background:
+        rgba(255,255,255,.10);
+
+    box-shadow: 0 4px 12px rgba(0,0,0,.07);
+}
+
+.future-small {
+    font-family: 'Cinzel', serif;
+
+    text-transform: uppercase;
+
+    letter-spacing: .25em;
+
+    font-size: .78rem;
+
+    color: #655c4f;
+
+    margin-bottom: 1.2em;
+}
+
+.future-title {
+    font-family: 'Cinzel', serif;
+
+    font-size: clamp(27px, 5vw, 42px);
+
+    font-weight: 700;
+
+    line-height: 1.3;
+
+    color: #1b1814;
+}
+
+.future-period {
+    font-size: clamp(1.3rem, 3vw, 1.7rem);
+
+    color: #5f564a;
+
+    margin-top: .5em;
+}
+
+
+/* ===== THIRD VOLUME TEXT ===== */
+
+.third-copy {
+    max-width: 740px;
+
+    margin: 0 auto;
+
+    font-size: clamp(1.07rem, 2.5vw, 1.23rem);
+
+    line-height: 1.9;
+}
+
+.third-copy p {
+    margin: 0 0 1.5em;
+}
+
+.callout {
+    max-width: 720px;
+
+    margin: 2.5em auto;
+
+    padding: 1.8em 2em;
+
+    border-top: 1px solid #bcae97;
+
+    border-bottom: 1px solid #bcae97;
+
+    font-size: clamp(1.15rem, 2.7vw, 1.35rem);
+
+    font-style: italic;
+
+    line-height: 1.8;
+}
+
+
+/* ===== SUBMIT BUTTON ===== */
+
+.submit-area {
+    margin-top: 3.2em;
+}
+
+.submit-link {
+    display: inline-block;
+
+    padding: 1em 1.8em;
+
+    background: #3e5578;
+
+    border: 2px solid #3e5578;
+
+    color: #EADCC5;
+
+    font-family: 'Cinzel', serif;
+
+    font-weight: 700;
+
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+
+    letter-spacing: .08em;
+
+    text-decoration: none;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,.14);
+
+    transition:
+        background-color .3s ease,
+        color .3s ease,
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.submit-link:hover {
+    background: transparent;
+
+    color: #3e5578;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 6px 14px rgba(0,0,0,.16);
+}
+
+.submit-note {
+    margin: 1em auto 0;
+
+    max-width: 620px;
+
+    color: #655c4f;
+
+    font-style: italic;
+
+    font-size: .98rem;
+}
+
+
+/* ===== GALE SITE ===== */
+
+.gale-link {
+    margin-top: 5em;
+
+    text-align: center;
+}
+
+.gale-link a {
+    color: #3e5578;
+
+    text-decoration: none;
+
+    border-bottom: 1px solid #8b98aa;
+}
+
+.gale-link a:hover {
+    opacity: .6;
+}
+
+
+/* ===== FOOTER ===== */
+
+.footer {
+    margin-top: 5em;
+
+    padding-top: 2em;
+
+    border-top: 1px solid rgba(80,70,55,.15);
+
+    text-align: center;
+
+    font-size: 1rem;
+
+    color: #5f564a;
+}
+
+.last-modified {
+    margin-top: .6em;
+
+    text-align: center;
+
+    font-style: italic;
+
+    font-size: .95rem;
+
+    color: #6a6257;
+}
+
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 700px) {
+
+    body {
+        padding-top: 40px;
+    }
+
+    .books-grid {
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+    }
+
+    .book-cover {
+        max-width: 520px;
+    }
+
+    .future-book {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .callout {
+        padding-left: .7em;
+        padding-right: .7em;
+    }
+
+}
+
 </style>
+
 </head>
+
+
 <body>
 
-<header>
-  <h1>Life in Wellsboro</h1>
-  <p class="tagline">A photographic history, told one book at a time</p>
+<div class="page">
+
+
+<!-- ===== INTRODUCTION ===== -->
+
+<header class="hero">
+
+<div class="eyebrow">
+A Community in Photographs &amp; Stories
+</div>
+
+<h1>
+Life in Wellsboro
+</h1>
+
+<div class="hero-period">
+1880–2000
+</div>
+
+<div class="divider"></div>
+
+<p class="hero-intro">
+
+For more than a century, Wellsboro has been photographed by
+the people who lived here. Those photographs — together with
+their names, memories and stories — preserve something that
+official records alone cannot: what it felt like to call
+Wellsboro home.
+
+</p>
+
 </header>
 
-<main>
 
-  <section>
-    <h2>About the Series</h2>
-    <p class="placeholder">
-      [Placeholder — a paragraph or two on what this series is: the town, the era(s) covered,
-      why it started, and what makes this project different from a typical local history book.
-      Send me your notes and I'll turn this into real copy.]
-    </p>
-  </section>
 
-  <section>
-    <h2>The Books</h2>
-    <div class="books">
-      <div class="book">
-        <h3>Life in Wellsboro, Book One</h3>
-        <span class="placeholder">Title, year, short description — TBD</span>
-      </div>
-      <div class="book">
-        <h3>Life in Wellsboro, Book Two</h3>
-        <span class="placeholder">Title, year, short description — TBD</span>
-      </div>
-      <div class="book">
-        <h3>Life in Wellsboro, Book Three</h3>
-        <span class="placeholder">In progress — expected [date]</span>
-      </div>
-    </div>
-  </section>
+<!-- ===== FIRST TWO VOLUMES ===== -->
 
-  <section>
-    <h2>About the Author</h2>
-    <p class="placeholder">
-      [Placeholder — a short bio for Gale Largey. A sentence or two on his connection
-      to Wellsboro and what drew him to documenting its history.]
-    </p>
-  </section>
+<section class="original-volumes">
 
-  <section>
-    <h2>Have a Photo or Story to Share?</h2>
-    <p>
-      Book Three is currently being assembled, and contributions from the community are
-      part of what makes this series work. If you have an old photograph of Wellsboro —
-      or a story to go with one — we'd love to see it.
-    </p>
-    <p class="placeholder">
-      [Link to the submission form goes here once it's set up.]
-    </p>
-  </section>
+<div class="section-label">
+The First Two Volumes
+</div>
 
-</main>
+<h2>
+A History Told Through Everyday Life
+</h2>
+
+
+<div class="books-grid">
+
+
+<!-- 1880–1920 -->
+
+<article class="volume">
+
+<img
+src="Life1880.jpg"
+alt="Cover of Life in Wellsboro 1880–1920"
+class="book-cover">
+
+<h3>
+Life in Wellsboro, 1880–1920
+</h3>
+
+<div class="volume-year">
+Published 1980
+</div>
+
+</article>
+
+
+
+<!-- 1920–1960 -->
+
+<article class="volume">
+
+<img
+src="Life1920.jpg"
+alt="Cover of Life in Wellsboro 1920–1960"
+class="book-cover">
+
+<h3>
+Life in Wellsboro, 1920–1960
+</h3>
+
+<div class="volume-year">
+Published 1988
+</div>
+
+</article>
+
+
+</div>
+
+</section>
+
+
+
+<!-- ===== WHAT THE BOOKS WERE ===== -->
+
+<section class="original-idea">
+
+<div class="section-label">
+The Idea
+</div>
+
+<h2>
+A Community Album
+</h2>
+
+<p>
+
+Gale Largey conceived <em>Life in Wellsboro</em> not simply
+as a conventional history, but as a community album — a blend
+of photographs, newspaper accounts, historical documents,
+recollections, census information and the stories people
+remembered.
+
+</p>
+
+<p>
+
+The books moved from <strong>the place</strong> — its streets,
+homes, churches, schools and businesses — to
+<strong>the people</strong> who inhabited it, then to
+<strong>everyday life</strong> at work and play, and finally
+to <strong>the main events</strong> that shaped each era.
+
+</p>
+
+<div class="quotation">
+
+The result was meant to be more than a record of the past.
+It was something families and friends could look through
+together, remember together, and pass to future generations.
+
+</div>
+
+</section>
+
+
+
+<!-- ===== THIRD VOLUME ===== -->
+
+<section class="third-volume">
+
+<div class="story-continues">
+Now, The Story Continues
+</div>
+
+<h2>
+Life in Wellsboro
+</h2>
+
+<div class="third-period">
+1960–2000
+</div>
+
+
+<div class="future-book">
+
+<div class="future-small">
+The Third Volume
+</div>
+
+<div class="future-title">
+Life in Wellsboro
+</div>
+
+<div class="future-period">
+1960–2000
+</div>
+
+</div>
+
+
+<div class="third-copy">
+
+<p>
+
+Gale Largey is returning to the story with a third
+<em>Life in Wellsboro</em> volume, carrying the community's
+history from 1960 through the end of the twentieth century.
+
+</p>
+
+<p>
+
+This book will follow the spirit of the first two volumes:
+the places we remember, the people we knew, everyday life,
+and the events that brought Wellsboro together and changed
+the community over four remarkable decades.
+
+</p>
+
+</div>
+
+
+<div class="callout">
+
+But this part of Wellsboro's history is not hidden away
+waiting to be discovered in an archive. Much of it is already
+in our homes.
+
+</div>
+
+
+<div class="third-copy">
+
+<p>
+
+It is in family photo albums, shoeboxes of snapshots,
+35mm slides, school pictures, photographs from workplaces,
+parades, sports teams, churches, clubs, neighborhoods,
+celebrations and ordinary afternoons.
+
+</p>
+
+<p>
+
+And the photographs are only part of the story. We want to
+know <strong>who is in them, where they were taken, what was
+happening, and what you remember.</strong>
+
+</p>
+
+<p>
+
+Wellsboro's families have the photographs. Wellsboro's people
+have the stories. This third volume will invite the community
+to bring those pieces together so they can become part of the
+story we leave for the generations that follow.
+
+</p>
+
+</div>
+
+
+
+<!-- ===== CONTRIBUTE ===== -->
+
+<div class="submit-area">
+
+<a class="submit-link"
+href="submit.html">
+
+SHARE YOUR PHOTOGRAPHS &amp; STORIES
+
+</a>
+
+<div class="submit-note">
+
+Follow the project, learn what photographs we are looking for,
+and submit photographs and memories for consideration.
+
+</div>
+
+</div>
+
+
+</section>
+
+
+
+<!-- ===== GALE WEBSITE ===== -->
+
+<div class="gale-link">
+
+Learn more about Gale Largey's work at
+<a href="https://galelargey.org">
+GaleLargey.org
+</a>
+
+</div>
+
+
+
+<!-- ===== FOOTER ===== -->
 
 <footer>
-  &copy; <span id="year"></span> Life in Wellsboro. All photographs remain the property of their original owners.
+
+<div class="footer">
+
+LifeInWellsboro.com
+&nbsp;&nbsp;|&nbsp;&nbsp;
+© 2026
+
+</div>
+
+<div class="last-modified"
+id="lastModified">
+</div>
+
 </footer>
 
+
+</div>
+
+
+
 <script>
-  document.getElementById('year').textContent = new Date().getFullYear();
+
+const lastModified =
+    new Date(document.lastModified);
+
+const parts =
+    new Intl.DateTimeFormat(
+        'en-US',
+        {
+            timeZone: 'America/New_York',
+            month: 'short',
+            day: '2-digit',
+            year: 'numeric',
+            hour: 'numeric',
+            minute: '2-digit',
+            hour12: true,
+            timeZoneName: 'short'
+        }
+    ).formatToParts(lastModified);
+
+const values = {};
+
+parts.forEach(part => {
+    values[part.type] = part.value;
+});
+
+const formatted =
+    `${values.month} ${values.day}, ${values.year} — ` +
+    `${values.hour}:${values.minute} ` +
+    `${values.dayPeriod} ${values.timeZoneName}`;
+
+document.getElementById("lastModified").textContent =
+    "Last update: " + formatted;
+
 </script>
 
+
 </body>
+
 </html>
