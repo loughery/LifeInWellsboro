@@ -170,7 +170,7 @@ h2 {
 /* ===== ORIGINAL VOLUMES ===== */
 
 .original-volumes {
-    margin-bottom: clamp(80px, 11vh, 140px);
+    margin-bottom: clamp(85px, 11vh, 140px);
 }
 
 .books-grid {
@@ -178,9 +178,9 @@ h2 {
 
     grid-template-columns: repeat(2, minmax(0, 1fr));
 
-    gap: clamp(35px, 6vw, 80px);
+    gap: clamp(35px, 6vw, 70px);
 
-    max-width: 950px;
+    max-width: 1000px;
 
     margin: 3.5em auto 0;
 
@@ -210,7 +210,7 @@ h2 {
 .volume h3 {
     font-family: 'Cinzel', serif;
 
-    font-size: clamp(1.25rem, 2.7vw, 1.65rem);
+    font-size: clamp(1.2rem, 2.7vw, 1.6rem);
 
     line-height: 1.4;
 
@@ -223,10 +223,100 @@ h2 {
     color: #655c4f;
 
     font-size: 1.05rem;
+
+    margin-bottom: 1.5em;
 }
 
 
-/* ===== GALE'S IDEA ===== */
+/* ===== ORIGINAL BOOK EXCERPT ===== */
+
+.sleeve-intro {
+    max-width: 420px;
+
+    margin: 0 auto 1.4em;
+
+    font-size: 1.08rem;
+
+    line-height: 1.75;
+
+    font-style: italic;
+
+    color: #403a32;
+}
+
+
+/* ===== EXPANDABLE SLEEVE NOTES ===== */
+
+.sleeve-notes {
+    max-width: 460px;
+
+    margin: 0 auto;
+
+    text-align: left;
+
+    border-top: 1px solid rgba(80,70,55,.20);
+
+    border-bottom: 1px solid rgba(80,70,55,.20);
+}
+
+.sleeve-notes summary {
+    cursor: pointer;
+
+    list-style: none;
+
+    text-align: center;
+
+    padding: 1em .5em;
+
+    color: #3e5578;
+
+    font-family: 'Cinzel', serif;
+
+    font-size: .9rem;
+
+    letter-spacing: .06em;
+
+    transition: opacity .3s ease;
+}
+
+.sleeve-notes summary::-webkit-details-marker {
+    display: none;
+}
+
+.sleeve-notes summary::after {
+    content: "  ↓";
+}
+
+.sleeve-notes[open] summary::after {
+    content: "  ↑";
+}
+
+.sleeve-notes summary:hover {
+    opacity: .6;
+}
+
+.sleeve-text {
+    padding: .5em 1.2em 1.5em;
+
+    font-size: 1rem;
+
+    line-height: 1.75;
+
+    color: #302b25;
+}
+
+.sleeve-text p {
+    margin: 0 0 1.3em;
+
+    text-indent: 1.5em;
+}
+
+.sleeve-text p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ===== THE IDEA ===== */
 
 .original-idea {
     max-width: 780px;
@@ -313,8 +403,7 @@ h2 {
 
     border: 1px solid #a99c88;
 
-    background:
-        rgba(255,255,255,.10);
+    background: rgba(255,255,255,.10);
 
     box-shadow: 0 4px 12px rgba(0,0,0,.07);
 }
@@ -509,7 +598,7 @@ h2 {
     .books-grid {
         grid-template-columns: 1fr;
 
-        gap: 55px;
+        gap: 65px;
     }
 
     .book-cover {
@@ -518,11 +607,13 @@ h2 {
 
     .future-book {
         margin-left: 10px;
+
         margin-right: 10px;
     }
 
     .callout {
         padding-left: .7em;
+
         padding-right: .7em;
     }
 
@@ -538,7 +629,9 @@ h2 {
 <div class="page">
 
 
-<!-- ===== INTRODUCTION ===== -->
+<!-- ===================================================
+     INTRODUCTION
+=================================================== -->
 
 <header class="hero">
 
@@ -570,7 +663,9 @@ Wellsboro home.
 
 
 
-<!-- ===== FIRST TWO VOLUMES ===== -->
+<!-- ===================================================
+     FIRST TWO VOLUMES
+=================================================== -->
 
 <section class="original-volumes">
 
@@ -586,7 +681,9 @@ A History Told Through Everyday Life
 <div class="books-grid">
 
 
-<!-- 1880–1920 -->
+<!-- ===================================================
+     1880–1920
+=================================================== -->
 
 <article class="volume">
 
@@ -603,11 +700,72 @@ Life in Wellsboro, 1880–1920
 Published 1980
 </div>
 
+
+<div class="sleeve-intro">
+
+“This book is a delightful community album depicting life
+in Wellsboro between 1880 and 1920.”
+
+</div>
+
+
+<details class="sleeve-notes">
+
+<summary>
+Read the original sleeve notes
+</summary>
+
+
+<div class="sleeve-text">
+
+<p>
+
+This book is a delightful community album depicting life in
+Wellsboro between 1880 and 1920. It is loaded with tidbits of
+interest — a fascinating blend of old photographs, newspaper
+accounts, excerpts from interviews with older residents,
+census data, and a wide array of other historical sources.
+It is an appreciative glimpse of Wellsboro, heartwarming in
+its approach.
+
+</p>
+
+
+<p>
+
+The book’s organization is pleasantly simple to follow.
+First, you are presented with photographs and descriptions
+of the place — the streets, houses, business establishments,
+office buildings, the public square, churches, and so forth;
+then, you have an opportunity to study portraits of some of
+the community’s most interesting and colorful people —
+you’ll enjoy the faces of the people who lived in Wellsboro;
+next you are delighted by a series of photographs that depict
+everyday life — both work and play; and finally, you are
+given a succinct summary of the main events of the time.
+
+</p>
+
+
+<p>
+
+You will enjoy the book many times over. It will be a ready
+source of conversation not only among your immediate family
+and friends, but also among future generations.
+
+</p>
+
+</div>
+
+</details>
+
 </article>
 
 
 
-<!-- 1920–1960 -->
+<!-- ===================================================
+     1920–1960
+=================================================== -->
 
 <article class="volume">
 
@@ -624,6 +782,72 @@ Life in Wellsboro, 1920–1960
 Published 1988
 </div>
 
+
+<div class="sleeve-intro">
+
+“LIFE IN WELLSBORO: 1920-60 is a community scrap book,
+a photo album, a story, a socio-historical account.”
+
+</div>
+
+
+<details class="sleeve-notes">
+
+<summary>
+Read the original sleeve notes
+</summary>
+
+
+<div class="sleeve-text">
+
+<p>
+
+LIFE IN WELLSBORO: 1920-60 is a community scrap book, a
+photo album, a story, a socio-historical account. It is a
+blend of visual images, newspaper reports, historical
+documents, census data, recollections, fanciful facts, and
+lively anecdotes. There is no pretense that the book is
+anything more than a glimpse of the reality of forty years
+of life. Yet, in browsing through the book you are likely to
+experience an appreciative understanding of Wellsboro. You
+will more fully realize the life seasonings that have made
+the community such a special place.
+
+</p>
+
+
+<p>
+
+The book is a sequel to the previous volume, LIFE IN
+WELLSBORO, 1880-1920. The organization is purposefully
+patterned in the same vein. First, one looks at the place —
+the streets, homes, churches, schools, business
+establishments, and factories in the community. In addition,
+there is a series of unique photos of the nearby Grand
+Canyon. Then, there are the people, the faces that inhabited
+the place, portraits which reveal the styles and expressions
+of the times. Next, there is a focus on the nature of the
+people’s activity, glimpses of them as they lived everyday
+life, working, playing, and praying. Finally, there is a
+summary of the main events of the 1920-60 period, the
+happenings that stirred a special flavor into everyday life.
+
+</p>
+
+
+<p>
+
+Some images are worth a thousand words, while some words are
+worth a thousand images. Hopefully, the reader will discover
+that LIFE IN WELLSBORO, 1920-60 is rich with both images and
+words. Savor and enjoy it. Share it with a friend.
+
+</p>
+
+</div>
+
+</details>
+
 </article>
 
 
@@ -633,7 +857,9 @@ Published 1988
 
 
 
-<!-- ===== WHAT THE BOOKS WERE ===== -->
+<!-- ===================================================
+     THE IDEA
+=================================================== -->
 
 <section class="original-idea">
 
@@ -645,31 +871,34 @@ The Idea
 A Community Album
 </h2>
 
-<p>
-
-Gale Largey conceived <em>Life in Wellsboro</em> not simply
-as a conventional history, but as a community album — a blend
-of photographs, newspaper accounts, historical documents,
-recollections, census information and the stories people
-remembered.
-
-</p>
 
 <p>
 
-The books moved from <strong>the place</strong> — its streets,
-homes, churches, schools and businesses — to
-<strong>the people</strong> who inhabited it, then to
-<strong>everyday life</strong> at work and play, and finally
-to <strong>the main events</strong> that shaped each era.
+From the beginning, Gale Largey conceived
+<em>Life in Wellsboro</em> as something more personal than
+a conventional history. Photographs, newspaper accounts,
+documents, recollections and everyday stories would be
+brought together to show not simply what happened, but what
+life here looked and felt like.
 
 </p>
+
+
+<p>
+
+Both books followed a deliberately simple pattern:
+<strong>the place</strong>, <strong>the people</strong>,
+<strong>everyday life</strong>, and
+<strong>the main events</strong> of the period.
+
+</p>
+
 
 <div class="quotation">
 
-The result was meant to be more than a record of the past.
-It was something families and friends could look through
-together, remember together, and pass to future generations.
+The books were made to be looked through, talked about,
+shared among families and friends, and remembered by
+generations that followed.
 
 </div>
 
@@ -677,22 +906,30 @@ together, remember together, and pass to future generations.
 
 
 
-<!-- ===== THIRD VOLUME ===== -->
+<!-- ===================================================
+     THIRD VOLUME
+=================================================== -->
 
 <section class="third-volume">
+
 
 <div class="story-continues">
 Now, The Story Continues
 </div>
 
+
 <h2>
 Life in Wellsboro
 </h2>
+
 
 <div class="third-period">
 1960–2000
 </div>
 
+
+
+<!-- THIRD BOOK PLACEHOLDER -->
 
 <div class="future-book">
 
@@ -711,38 +948,46 @@ Life in Wellsboro
 </div>
 
 
+
 <div class="third-copy">
+
 
 <p>
 
 Gale Largey is returning to the story with a third
-<em>Life in Wellsboro</em> volume, carrying the community's
+<em>Life in Wellsboro</em> volume, carrying the community’s
 history from 1960 through the end of the twentieth century.
 
 </p>
 
+
 <p>
 
-This book will follow the spirit of the first two volumes:
-the places we remember, the people we knew, everyday life,
-and the events that brought Wellsboro together and changed
-the community over four remarkable decades.
+The new book will follow the spirit and organization of the
+first two volumes: the places we remember, the people we
+knew, everyday life, and the events that brought Wellsboro
+together and changed the community over four remarkable
+decades.
 
 </p>
 
+
 </div>
+
 
 
 <div class="callout">
 
-But this part of Wellsboro's history is not hidden away
-waiting to be discovered in an archive. Much of it is already
-in our homes.
+But this part of Wellsboro’s history is not hidden away
+waiting to be discovered in an archive. Much of it is
+already in our homes.
 
 </div>
 
 
+
 <div class="third-copy">
+
 
 <p>
 
@@ -753,6 +998,7 @@ celebrations and ordinary afternoons.
 
 </p>
 
+
 <p>
 
 And the photographs are only part of the story. We want to
@@ -761,20 +1007,25 @@ happening, and what you remember.</strong>
 
 </p>
 
+
 <p>
 
-Wellsboro's families have the photographs. Wellsboro's people
-have the stories. This third volume will invite the community
-to bring those pieces together so they can become part of the
-story we leave for the generations that follow.
+Wellsboro’s families have the photographs.
+Wellsboro’s people have the stories. This third volume
+will invite the community to bring those pieces together so
+they can become part of the story we leave for the
+generations that follow.
 
 </p>
+
 
 </div>
 
 
 
-<!-- ===== CONTRIBUTE ===== -->
+<!-- ===================================================
+     CONTRIBUTE
+=================================================== -->
 
 <div class="submit-area">
 
@@ -784,6 +1035,7 @@ href="submit.html">
 SHARE YOUR PHOTOGRAPHS &amp; STORIES
 
 </a>
+
 
 <div class="submit-note">
 
@@ -799,11 +1051,13 @@ and submit photographs and memories for consideration.
 
 
 
-<!-- ===== GALE WEBSITE ===== -->
+<!-- ===================================================
+     GALE'S MAIN WEBSITE
+=================================================== -->
 
 <div class="gale-link">
 
-Learn more about Gale Largey's work at
+Learn more about Gale Largey’s work at
 <a href="https://galelargey.org">
 GaleLargey.org
 </a>
@@ -812,9 +1066,12 @@ GaleLargey.org
 
 
 
-<!-- ===== FOOTER ===== -->
+<!-- ===================================================
+     FOOTER
+=================================================== -->
 
 <footer>
+
 
 <div class="footer">
 
@@ -824,9 +1081,11 @@ LifeInWellsboro.com
 
 </div>
 
+
 <div class="last-modified"
 id="lastModified">
 </div>
+
 
 </footer>
 
@@ -839,6 +1098,7 @@ id="lastModified">
 
 const lastModified =
     new Date(document.lastModified);
+
 
 const parts =
     new Intl.DateTimeFormat(
@@ -855,19 +1115,32 @@ const parts =
         }
     ).formatToParts(lastModified);
 
+
 const values = {};
 
+
 parts.forEach(part => {
+
     values[part.type] = part.value;
+
 });
 
+
 const formatted =
+
     `${values.month} ${values.day}, ${values.year} — ` +
+
     `${values.hour}:${values.minute} ` +
+
     `${values.dayPeriod} ${values.timeZoneName}`;
 
-document.getElementById("lastModified").textContent =
+
+document.getElementById(
+    "lastModified"
+).textContent =
+
     "Last update: " + formatted;
+
 
 </script>
 
