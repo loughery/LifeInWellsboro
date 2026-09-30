@@ -123,42 +123,41 @@ button:hover {
 Have a question about <em>Life in Wellsboro</em>, submitting a photograph, or something you remember about Wellsboro? Send me a message using the form below.
 </p>
 
-<!-- from formsubmit.com -->
+<!-- TALLY CONTACT FORM -->
 
-<!-- CONTACT FORM -->
+<iframe
+    data-tally-src="https://tally.so/embed/PdV2r1?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+    loading="lazy"
+    width="100%"
+    height="500"
+    frameborder="0"
+    marginheight="0"
+    marginwidth="0"
+    title="Contact Life in Wellsboro">
+</iframe>
 
-<form action="https://formsubmit.co/LifeInWellsboro@gmail.com"
-      method="POST">
+<script>
+var d=document,
+    w="https://tally.so/widgets/embed.js",
+    v=function(){
+        if(typeof Tally!=="undefined"){
+            Tally.loadEmbeds();
+        }else{
+            d.querySelectorAll("iframe[data-tally-src]:not([src])")
+             .forEach(function(e){e.src=e.dataset.tallySrc;});
+        }
+    };
 
-    <input type="hidden"
-           name="_subject"
-           value="New message from LifeInWellsboro.com">
-
-    <label for="name">Your name</label>
-    <input type="text"
-           id="name"
-           name="name"
-           required>
-
-    <label for="email">Your email address</label>
-    <input type="email"
-           id="email"
-           name="email"
-           required>
-
-    <label for="subject">Subject</label>
-    <input type="text"
-           id="subject"
-           name="subject">
-
-    <label for="message">Your message</label>
-    <textarea id="message"
-              name="message"
-              required></textarea>
-
-    <button type="submit">Send Message</button>
-
-</form>
+if(typeof Tally!=="undefined"){
+    v();
+}else if(d.querySelector('script[src="'+w+'"]')==null){
+    var s=d.createElement("script");
+    s.src=w;
+    s.onload=v;
+    s.onerror=v;
+    d.body.appendChild(s);
+}
+</script>
     
 <p class="note">
 Your email address will only be used to respond to your message.
