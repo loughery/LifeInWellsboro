@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Send a Message | Life in Wellsboro</title>
+
+<meta name="description"
+content="Send a message to the Life in Wellsboro project.">
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 60px 20px;
+    background: #ffffff;
+    color: #2b2926;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+.contact-page {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0 0 15px;
+    font-size: clamp(36px, 6vw, 52px);
+    line-height: 1.15;
+    color: #302e2a;
+}
+
+.intro {
+    margin: 0 0 40px;
+    font-size: 1.1rem;
+    color: #4a4742;
+}
+
+label {
+    display: block;
+    margin: 0 0 7px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+    margin: 0 0 24px;
+    border: 1px solid #c9c9c9;
+    border-radius: 5px;
+    background: #ffffff;
+    color: #222;
+    font: inherit;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #3e5578;
+    outline-offset: 1px;
+    border-color: #3e5578;
+}
+
+textarea {
+    min-height: 180px;
+    resize: vertical;
+}
+
+button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #302e2a;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4a4742;
+}
+
+.return-link {
+    margin-top: 35px;
+}
+
+.return-link a {
+    color: #3e5578;
+    text-decoration: none;
+}
+
+.return-link a:hover {
+    text-decoration: underline;
+}
+
+.note {
+    margin-top: 25px;
+    color: #666;
+    font-size: .92rem;
+}
+
+</style>
+</head>
+
+<body>
+
+<main class="contact-page">
+
+<h1>Send Me a Message</h1>
+
+<p class="intro">
+Have a question about <em>Life in Wellsboro</em>, a photograph you
+would like to share, or something you remember about Wellsboro?
+Send me a message using the form below.
+</p>
+
+<form action="https://formsubmit.co/LifeInWellsboro@gmail.com"
+      method="POST">
+
+    <!-- FormSubmit settings -->
+    <input type="hidden"
+           name="_subject"
+           value="New message from LifeInWellsboro.com">
+
+    <input type="hidden"
+           name="_captcha"
+           value="true">
+
+    <!-- Name -->
+    <label for="name">Your name</label>
+    <input type="text"
+           id="name"
+           name="name"
+           autocomplete="name"
+           required>
+
+    <!-- Email -->
+    <label for="email">Your email address</label>
+    <input type="email"
+           id="email"
+           name="email"
+           autocomplete="email"
+           required>
+
+    <!-- Subject -->
+    <label for="subject">Subject</label>
+    <input type="text"
+           id="subject"
+           name="subject">
+
+    <!-- Message -->
+    <label for="message">Your message</label>
+    <textarea id="message"
+              name="message"
+              required></textarea>
+
+    <button type="submit">
+        Send Message
+    </button>
+
+</form>
+
+<p class="note">
+Your email address will only be used to respond to your message.
+</p>
+
+<p class="return-link">
+    <a href="index.html">← Return to Life in Wellsboro</a>
+</p>
+
+</main>
+
+</body>
+</html>
